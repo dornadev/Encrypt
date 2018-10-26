@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layoutDirection="rtl"
+    android:background="@color/card">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"
+        android:id="@+id/liner"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="   تنظیمات"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/liner"
+
+    android:id="@+id/brr">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   تهیه پشتیبان و بازیابی"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/br"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تهیه پشتیبان"
+            android:id="@+id/backup"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/br"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بازیابی نسخه پشتیبان"
+            android:id="@+id/restore"
+
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/backup"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brr"
+        android:id="@+id/br2"
+        android:layout_marginTop="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ارتباط با ما"
+                android:layout_margin="10dp"
+
+                android:textColor="@color/colorAccent"
+                android:drawableTint="@color/grey"
+                android:id="@+id/br1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارسال ایمیل"
+                android:id="@+id/email"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/br1"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/br2"
+        android:layout_marginTop="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   درباره ما"
+                android:layout_margin="10dp"
+
+                android:textColor="@color/colorAccent"
+                android:drawableTint="@color/grey"
+                android:id="@+id/br3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دفترچه رمزنگار نسخه 1"
+                android:id="@+id/ab"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/br3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ایمیل برنامه نویس:dornadev@gmail.com"
+                android:id="@+id/ab1"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/ab"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="در صورت داشتن هر گونه نظر و یا انتقادی در مورد برنامه با ایمیل بالا تماس بگیرید"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/ab2"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/ab1"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copyright © 2017 DornaDev"
+                android:id="@+id/co"
+
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/ab2"
+
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

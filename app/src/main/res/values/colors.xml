@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#039be5</color>
+    <color name="white">#fafafa</color>
+    <color name="white2">#f7f6f6</color>
+    <color name="black">#000000</color>
+    <color name="geryblack">#29B6F6</color>
+    <color name="red">#F44336</color>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="text_color_secondary">#b2000000</color>
+    <color name="grey">#616161</color>
+    <color name="status">#2d609b</color>
+    <color name="backgrey">#F5F5F5</color>
+    <color name="card">#BDBDBD</color>
+</resources>
