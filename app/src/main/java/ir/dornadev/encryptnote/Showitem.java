@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.security.MessageDigest;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,7 +30,7 @@ import javax.crypto.spec.SecretKeySpec;
 import ir.dornadev.encrypt.R;
 import ir.dornadev.encryptnote.Handler.DbHandler;
 
-public class itShowitem extends AppCompatActivity {
+public class Showitem extends AppCompatActivity {
 
     String aes="AES",output;
     EditText txtmessageup,txtpassword,txttitleup;
@@ -131,14 +132,14 @@ public class itShowitem extends AppCompatActivity {
     }
 
     private void initviews() {
-        share=(ImageView)findViewById(R.id.share);
-        copy=(ImageView)findViewById(R.id.copy);
-        delete=(ImageView)findViewById(R.id.delete);
-        back=(ImageView)findViewById(R.id.back);
-        btnedit=(FloatingActionButton)findViewById(R.id.btnedit);
-        txtmessage=(TextView)findViewById(R.id.showmessage);
-        txttitle=(TextView)findViewById(R.id.showtitle);
-        date=(TextView)findViewById(R.id.date);
+        share=findViewById(R.id.share);
+        copy=findViewById(R.id.copy);
+        delete=findViewById(R.id.delete);
+        back=findViewById(R.id.back);
+        btnedit=findViewById(R.id.btnedit);
+        txtmessage=findViewById(R.id.showmessage);
+        txttitle=findViewById(R.id.showtitle);
+        date=findViewById(R.id.date);
 
 
 
@@ -171,6 +172,7 @@ public class itShowitem extends AppCompatActivity {
                 }
             }
         });
+
         fabdecrypt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -246,6 +248,7 @@ public class itShowitem extends AppCompatActivity {
                 clipData= ClipData.newPlainText("Text",txt);
                 clipboardManager.setPrimaryClip(clipData);
                 Toast.makeText(Showitem.this,"متن کپی شد",Toast.LENGTH_SHORT).show();
+
             }
         });
         pasteup.setOnClickListener(new View.OnClickListener() {
@@ -330,17 +333,17 @@ public class itShowitem extends AppCompatActivity {
     }
 
     private void upinitviews() {
-        fabsave=(FloatingActionButton) findViewById(R.id.btnupdate);
-        btnencrypt=(FloatingActionButton) findViewById(R.id.btnende);
-        fabdecrypt=(FloatingActionButton) findViewById(R.id.btndeen);
-        txtpassword=(EditText)findViewById(R.id.txtpassup);
-        txtmessageup=(EditText)findViewById(R.id.txtmessegeup);
-        txttitleup=(EditText)findViewById(R.id.txttitleup);
-        shareup=(ImageView)findViewById(R.id.shareup);
-        copyup=(ImageView)findViewById(R.id.copyup);
-        deleteup=(ImageView)findViewById(R.id.deleteup);
-        pasteup=(ImageView)findViewById(R.id.pasteup);
-        backup=(ImageView)findViewById(R.id.backup);
+        fabsave= findViewById(R.id.btnupdate);
+        btnencrypt= findViewById(R.id.btnende);
+        fabdecrypt=findViewById(R.id.btndeen);
+        txtpassword=findViewById(R.id.txtpassup);
+        txtmessageup=findViewById(R.id.txtmessegeup);
+        txttitleup=findViewById(R.id.txttitleup);
+        shareup=findViewById(R.id.shareup);
+        copyup=findViewById(R.id.copyup);
+        deleteup=findViewById(R.id.deleteup);
+        pasteup=findViewById(R.id.pasteup);
+        backup=findViewById(R.id.backup);
     }
 
     private String decrypt(String output, String password)throws Exception {

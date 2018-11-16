@@ -58,7 +58,7 @@ public class EditActivity extends AppCompatActivity {
 
                 }else if (TextUtils.isEmpty(txtmessage.getText().toString())){
                     txtmessage.setError("لطفا متن خود را وارد کنید");
-                    txtmessage.requestFocus();
+
                 }
                 else {
                     try {
@@ -83,7 +83,7 @@ public class EditActivity extends AppCompatActivity {
 
                 }else if (TextUtils.isEmpty(txtmessage.getText().toString())){
                     txtmessage.setError("لطفا متن خود را وارد کنید");
-                    txtmessage.requestFocus();
+
                 }else {
                     try {
                         output = decrypt(txtmessage.getText().toString(), txtpassword.getText().toString());
@@ -147,7 +147,7 @@ public class EditActivity extends AppCompatActivity {
 
                 } else if (TextUtils.isEmpty(txtmessage.getText().toString())) {
                     txtmessage.setError("لطفا متن خود را وارد کنید");
-                    txtmessage.requestFocus();
+
                 } else {
                     String ttitle = txttitle.getText().toString();
                     String mess = txtmessage.getText().toString();
@@ -189,19 +189,18 @@ public class EditActivity extends AppCompatActivity {
     }
 
     private void initviews() {
-        fabsave=(FloatingActionButton) findViewById(R.id.btnsave);
-        btnencrypt=(FloatingActionButton) findViewById(R.id.btnende);
-        fabdecrypt=(FloatingActionButton) findViewById(R.id.btndeen);
-        txtpassword=(EditText)findViewById(R.id.txtpass);
-        txtmessage=(EditText)findViewById(R.id.txtmessege);
-        txttitle=(EditText)findViewById(R.id.txttitle);
-        String message=txtmessage.getText().toString();
-        String title=txttitle.getText().toString();
+        fabsave= findViewById(R.id.btnsave);
+        btnencrypt= findViewById(R.id.btnende);
+        fabdecrypt= findViewById(R.id.btndeen);
+        txtpassword=findViewById(R.id.txtpass);
+        txtmessage=findViewById(R.id.txtmessege);
+        txttitle=findViewById(R.id.txttitle);
 
-        share=(ImageView)findViewById(R.id.share);
-        copy=(ImageView)findViewById(R.id.copy);
 
-        paste=(ImageView)findViewById(R.id.paste);
+        share=findViewById(R.id.share);
+        copy=findViewById(R.id.copy);
+
+        paste=findViewById(R.id.paste);
 
     }
     private String decrypt(String output, String password)throws Exception {
